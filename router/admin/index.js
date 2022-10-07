@@ -1,8 +1,5 @@
-const router = require("express").Router()
 
-const adminController = require("../../controller/admin/adminController")
+const router = require('express').Router()
 
+module.exports = router
 
-router.get('/test' , adminController.adminTest)
-
-module.exports = router;

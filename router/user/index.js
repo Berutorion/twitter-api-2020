@@ -1,5 +1,9 @@
-module.exports = {
-  usersRoute: require('./users'),
-  tweetsRoute: require('./tweets'),
-  followshipsRoute: require('./followships')
-}
+
+const router = require('express').Router()
+
+const userController = require('../../controllers/user/userController')
+
+router.post('/', userController.signUp)
+
+module.exports = router
+
